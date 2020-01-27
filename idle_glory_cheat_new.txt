@@ -20,28 +20,6 @@ while(iCounter < this.InfoManager.instance.playerInfo.heros.length)
 	iCounter++;
 }
 
-/*
-var newDamage = this.InfoManager.instance.playerInfo.heros[0][0][3][0];
-newDamage *= newMultiply;
-var newHP = this.InfoManager.instance.playerInfo.heros[0][0][3][1];
-newHP *= newMultiply;
-
-var newDamage1 = this.InfoManager.instance.playerInfo.heros[1][0][3][0];
-newDamage1 *= newMultiply;
-var newHP1 = this.InfoManager.instance.playerInfo.heros[1][0][3][1];
-newHP1 *= newMultiply;
-
-var newDamage2 = this.InfoManager.instance.playerInfo.heros[2][0][3][0];
-newDamage2 *= newMultiply;
-var newHP2 = this.InfoManager.instance.playerInfo.heros[2][0][3][1];
-newHP2 *= newMultiply;
-
-var newDamage3 = this.InfoManager.instance.playerInfo.heros[3][0][3][0];
-newDamage3 *= newMultiply;
-var newHP3 = this.InfoManager.instance.playerInfo.heros[3][0][3][1];
-newHP3 *= newMultiply;
-
-*/
 setTimeout(updateStats, 1000);
 
 function updateStats()
@@ -96,97 +74,6 @@ function updateStats()
 	}
 	
 	bFlag = false;
-	
-	//edit stats
-	
-	/*
-	if(newHP != this.InfoManager.instance.playerInfo.heros[0][0][3][1] && 
-	newDamage != this.InfoManager.instance.playerInfo.heros[0][0][3][0]
-	&&
-	newHP1 != this.InfoManager.instance.playerInfo.heros[1][0][3][1] && 
-	newDamage1 != this.InfoManager.instance.playerInfo.heros[1][0][3][0]
-	&&
-	newHP2 != this.InfoManager.instance.playerInfo.heros[2][0][3][1] && 
-	newDamage2 != this.InfoManager.instance.playerInfo.heros[2][0][3][0]
-	&&
-	newHP3 != this.InfoManager.instance.playerInfo.heros[3][0][3][1] && 
-	newDamage3 != this.InfoManager.instance.playerInfo.heros[3][0][3][0]
-	)
-	{
-		newHP = this.InfoManager.instance.playerInfo.heros[0][0][3][1];
-		newHP *= newMultiply;
-		console.log("New HP: " + newHP);
-		newDamage = this.InfoManager.instance.playerInfo.heros[0][0][3][0];
-		newDamage *= newMultiply;
-		console.log("New DMG: " + newDamage);
-		
-		newHP1 = this.InfoManager.instance.playerInfo.heros[1][0][3][1];
-		newHP1 *= newMultiply;
-		console.log("New HP1: " + newHP1);
-		newDamage1 = this.InfoManager.instance.playerInfo.heros[1][0][3][0];
-		newDamage1 *= newMultiply;
-		console.log("New DMG1: " + newDamage1);
-		
-		newHP2 = this.InfoManager.instance.playerInfo.heros[2][0][3][1];
-		newHP2 *= newMultiply;
-		console.log("New HP2: " + newHP2);
-		newDamage2 = this.InfoManager.instance.playerInfo.heros[2][0][3][0];
-		newDamage2 *= newMultiply;
-		console.log("New DMG2: " + newDamage2);
-		
-		newHP3 = this.InfoManager.instance.playerInfo.heros[3][0][3][1];
-		newHP3 *= newMultiply;
-		console.log("New HP3: " + newHP3);
-		newDamage3 = this.InfoManager.instance.playerInfo.heros[3][0][3][0];
-		newDamage3 *= newMultiply;
-		console.log("New DMG3: " + newDamage3);
-		
-		var i = 0;
-		while(i < 28)
-		{
-			this.InfoManager.instance.playerInfo.heros[0][0][3][i] *= newMultiply;
-			i++;
-		}
-		i = 0;
-		while(i < 28)
-		{
-			this.InfoManager.instance.playerInfo.heros[1][0][3][i] *= newMultiply;
-			i++;
-		}
-		i = 0;
-		while(i < 28)
-		{
-			this.InfoManager.instance.playerInfo.heros[2][0][3][i] *= newMultiply;
-			i++;
-		}
-		i = 0;
-		while(i < 28)
-		{
-			this.InfoManager.instance.playerInfo.heros[3][0][3][i] *= newMultiply;
-			i++;
-		}
-	}
-	*/
-	/*
-	//hp
-	if(newHP != this.InfoManager.instance.playerInfo.heros[0][0][3][1])
-	{
-		newHP = this.InfoManager.instance.playerInfo.heros[0][0][3][1];
-		newHP *= newMultiply;
-		this.InfoManager.instance.playerInfo.heros[0][0][3][1] = newHP;
-		console.log("New HP: " + newHP);
-	}
-	////this.InfoManager.instance.playerInfo.heros[0][0][3][1] =11111111;
-	//damage
-	if(newDamage != this.InfoManager.instance.playerInfo.heros[0][0][3][0])
-	{
-		newDamage = this.InfoManager.instance.playerInfo.heros[0][0][3][0];
-		newDamage *= newMultiply;
-		this.InfoManager.instance.playerInfo.heros[0][0][3][0] = newDamage;
-		console.log("New DMG: " + newDamage);
-	}
-	*/
-	////this.InfoManager.instance.playerInfo.heros[0][0][3][0] =999999;
 	
 	setTimeout(updateStats, 1000);
 }
